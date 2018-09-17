@@ -25,7 +25,7 @@ class ProjectsController extends Controller
 		$contact = new Contact($name, $email, $phone, $msg);
 		// dd($contact);
 
-		Mail::to('neterslandreau@gmail.com')
+		Mail::to(env('CONTACT_MAIL', 'neterslandreau@gmail.com'))
 			->send($contact);
 
 	}

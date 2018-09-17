@@ -2,16 +2,17 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>About TNG</h2>
+                <h2>{{ env('ABOUT_TAG', 'About Us') }}</h2>
                 <hr class="star-light">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
-                <p>Whether you're a small business owner looking to attract clients, or an established technology company wishing to add to your team, we can help you accomplish your goals!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
             </div>
             <div class="col-lg-4">
-                <p>The sites that we have showcased here only highlight some of our talents in a variety of environments.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>We specialize in making the things that make your ideas work!</p>
             </div>
         </div>

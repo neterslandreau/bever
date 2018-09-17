@@ -28,11 +28,11 @@
 
 		@include('partials.header')
 
-		@include('partials.portfolio')
+		@include('partials.contact')
 
 		@include('partials.about')
 
-		@include('partials.contact')
+		@include('partials.portfolio')
 
 	</div>
 
