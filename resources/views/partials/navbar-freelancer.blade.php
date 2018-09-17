@@ -21,13 +21,13 @@
 			@endif
 
 				<li class="page-scroll">
-					<a href="#portfolio">{{ config('PORTFOLIO_TAG', 'Our Work') }}</a>
+					<a href="#contact">{{ config('CONTACT_TAG', 'Contact') }}</a>
 				</li>
 				<li class="page-scroll">
 					<a href="#about">{{ config('ABOUT_TAG', 'About') }}</a>
 				</li>
 				<li class="page-scroll">
-					<a href="#contact">{{ config('CONTACT_TAG', 'Contact') }}</a>
+					<a href="#portfolio">{{ config('PORTFOLIO_TAG', 'Our Work') }}</a>
 				</li>
 			</ul>
 		</div>
