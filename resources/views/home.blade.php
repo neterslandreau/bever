@@ -3,7 +3,15 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-xs-5">
+            <div class="panel panel-default">
+                <div class="panel-heading">Site Configuration</div>
+                <div class="panel-body">
+                    Configuration settings
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-7">
             <div class="panel panel-default">
                 <div class="panel-heading">Projects</div>
 

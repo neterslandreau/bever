@@ -8,18 +8,11 @@
 		</div>
 
 		<div class="row">
-			@if (is_array($projects))
 				@foreach ($projects as $project)
 
 					@include('partials.portfolio-item')
 
 				@endforeach
-			@else
-			<div class="col-sm-4 portfolio-item">
-
-				No Projects to show at this time
-			</div>
-			@endif
 		</div>
 {{-- 
 		<div class="row">

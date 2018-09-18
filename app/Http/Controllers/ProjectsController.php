@@ -57,22 +57,27 @@ class ProjectsController extends Controller
 	 */
 	public function store(Request $request)
 	{
-		// dd(request('icon'));
 		$this->validate(request(), [
 			'name' => 'required',
 			'location' => 'required',
-			'icon' => 'required',
 			'description' => 'required',
 
 		]);
 
-		$type = Project::create([
+		$project = Project::create([
 			'name' => request('name'),
 			'location' => request('location'),
-			'icon' => request('icon'),
 			'description' => request('description'),
+			'icon' => '',
 		]);
 
+        if (request()->file('image')) {
+            $filename = $project->slug . '.png';
+            request()->file('image')->storeAs('public/icons', $filename);
+        }
+
+        $project->icon = 'public/icons/'.$filename;
+        $project->save();
 		session()->flash('message', 'Your project has been saved.');
 
 		return redirect()->home();
@@ -105,15 +110,20 @@ class ProjectsController extends Controller
 					'name' => 'required',
 					'location' => 'required',
 					'description' => 'required',
-					'icon' => 'required',
 
 				]);
 				$project = Project::where('slug', $slug)->first();
 				$project->name = request('name');
 				$project->location = request('location');
 				$project->description = request('description');
-				$project->icon = request('icon');
-				$project->save();
+
+		        if (request()->file('image')) {
+		            $filename = $project->slug . '.png';
+		            request()->file('image')->storeAs('public/icons', $filename);
+			        $project->icon = 'public/icons/'.$filename;
+		        }
+		        $project->save();
+
 				session()->flash('message', 'The project was successfully editted.');
 				return redirect()->home();
 			}

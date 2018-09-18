@@ -25,7 +25,7 @@
 	@endforeach
 
 		<tr>
-			<td colspan=5 align=center>
+			<td colspan=6 align=center>
 				<a class="glyphicon glyphicon-plus nav-link" href="/projects/create" role="button"><span>Add</span></a>
 			</td>
 		</tr>

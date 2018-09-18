@@ -11,7 +11,7 @@
 	<div class="col-sm-8">
 
 		@include ('layouts.errors')
-		<form method="post" action="/projects/{{ $project->slug }}/edit">
+		<form method="post" action="/projects/{{ $project->slug }}/edit" enctype="multipart/form-data">
 
 			{{ csrf_field() }}
 
@@ -20,10 +20,15 @@
 				<input type="text" class="form-control" id="name" name="name" value="{{ $project->name }}">
 			</div>
 
-			<div class="form-group">
-				<label for="name">Icon</label>
-				<input type="text" class="form-control" id="icon" name="icon" value="{{ $project->icon }}">
-			</div>
+            <div class="form-group">
+                <label for="image">Image</label>
+                @if (Storage::disk('local')->exists('public/icons/' . $project->slug . '.png'))
+
+                    <img class="img-rounded" src="/img/small/{{ $project->slug }}.png" height="125">
+
+                @endif
+                <input type="file" id="image" name="image" class="form-control">
+
 
 			<div class="form-group">
 				<label for="name">Location</label>

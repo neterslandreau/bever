@@ -5,6 +5,6 @@
 				<i class="fa fa-search-plus fa-3x">{{ $project->name }}</i>
 			</div>
 		</div>
-		<img src="{{ $project->icon }}" class="img-responsive" alt="{{ $project->slug }}">
+		<img src="img/large/{{ $project->slug }}.png" class="img-responsive" alt="{{ $project->slug }}">
 	</a>
 </div>
