@@ -5,7 +5,7 @@
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 			</button>
-			<a class="navbar-brand" href="/">{{ config('BRAND_NAME', 'Brand Name') }}</a>
+			<a class="navbar-brand" href="/">{{ config('app.company-name', 'Company Name') }}</a>
 		</div>
 
 
@@ -21,13 +21,13 @@
 			@endif
 
 				<li class="page-scroll">
-					<a href="#contact">{{ config('CONTACT_TAG', 'Contact') }}</a>
+					<a href="#contact">{{ config('app.contact', 'Contact') }}</a>
 				</li>
 				<li class="page-scroll">
-					<a href="#about">{{ config('ABOUT_TAG', 'About') }}</a>
+					<a href="#about">{{ config('app.about', 'About') }}</a>
 				</li>
 				<li class="page-scroll">
-					<a href="#portfolio">{{ config('PORTFOLIO_TAG', 'Our Work') }}</a>
+					<a href="#portfolio">{{ config('app.portfolio', 'Our Work') }}</a>
 				</li>
 			</ul>
 		</div>

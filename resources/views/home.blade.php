@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Site Configuration</div>
                 <div class="panel-body">
-                    Configuration settings
+                    @include('partials.admin-configs')
                 </div>
             </div>
         </div>

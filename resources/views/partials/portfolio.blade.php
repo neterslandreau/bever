@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h2>{{ env('BRAND_NAME', 'Brand Name') }}</h2>
+				<h2>{{ config('app.portfolio', 'Brand Name') }}</h2>
 				<hr class="star-primary">
 			</div>
 		</div>

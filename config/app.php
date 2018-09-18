@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Think-Knot.com: Home of the Neters Group',
+    'name' => env('APP_NAME','Think-Knot.com: Home of the Neters Group'),
 
     /*
     |--------------------------------------------------------------------------
@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://think-knot.com'),
+    'url' => env('APP_URL', 'http://bever.think-knot.com'),
 
     /*
     |--------------------------------------------------------------------------

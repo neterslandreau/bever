@@ -47,3 +47,8 @@ Route::post('/projects/{slug}/edit', 'ProjectsController@edit');
 Route::post('projects', 'ProjectsController@store');
 Route::get('projects/{slug}/delete', 'ProjectsController@destroy');
 
+Route::get('configurables/{slug}/edit', 'ConfigurablesController@edit');
+Route::get('configurables/create', 'ConfigurablesController@create');
+Route::post('/configurables/{slug}/edit', 'ConfigurablesController@edit');
+Route::post('/configurables', 'ConfigurablesController@store');
+Route::get('configurables/{slug}/delete', 'ConfigurablesController@destroy');

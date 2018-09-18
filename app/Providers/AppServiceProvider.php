@@ -22,7 +22,11 @@ class AppServiceProvider extends ServiceProvider
 				$rows[$project->slug] = $count;
 
 			}
-			$view->with(compact('projects', 'rows'));
+			$configurables = \App\Configurable::get();
+			foreach ($configurables as $c => $configurable) {
+				config(['app.'.$configurable->slug => $configurable->value]);
+			}
+			$view->with(compact('projects', 'rows', 'configurables'));
 		});
 	}
 
