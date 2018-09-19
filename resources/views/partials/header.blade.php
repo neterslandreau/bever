@@ -4,6 +4,7 @@
 			<div class="col-lg-12">
 				<div class="intro-text">
 					<span class="skills">Fully Bonded, Insured, & Licensed!</span>
+					<hr class="star-light">
 				</div>
 				<img class="img-rounded img-responsive" alt="Main Image" src="{{ config('app.site-logo', 'https://via.placeholder.com/450x250/000000') }}" title=" {{ config('app.company-name', 'Company Name') }}">
 				<div class="intro-text">
