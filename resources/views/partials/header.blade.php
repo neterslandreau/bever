@@ -6,7 +6,7 @@
 				<div class="intro-text">
 					<span class="name">{{ config('app.company-name', 'Company Name') }}</span>
 					<hr class="star-light">
-					<span class="skills">{{ config('app.tag-line', 'Things we focus on') }}</span>
+					<span class="skills">{!! config('app.tag-line', 'Things we focus on') !!}</span>
 				</div>
 			</div>
 		</div>

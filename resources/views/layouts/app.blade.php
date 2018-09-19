@@ -15,14 +15,15 @@
 
 	<!-- Scripts -->
 	<script src="//rawgit.com/saribe/eModal/master/dist/eModal.min.js"></script>
-	<script>
-		window.Laravel = {{ json_encode([
-			'csrfToken' => csrf_token(),
-		]) }};
-	</script>
+    <script>
+        window.Laravel = {!! htmlspecialchars_decode(json_encode([
+            'csrfToken' => csrf_token(),
+        ])) !!};
+    </script>
 </head>
 <body>
-	<div id="app" class="container">
+	<div id="app"></div>
+	<div class="container">
 		<nav class="navbar navbar-default navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -37,7 +38,7 @@
 
 					<!-- Branding Image -->
 					<a class="navbar-brand" href="{{ url('/') }}">
-						{{ config('app.name', 'Laravel') }}
+						{{ config('app.company-name', 'Laravel') }}
 					</a>
 				</div>
 

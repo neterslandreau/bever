@@ -25,7 +25,8 @@
 	</script>
 </head>
 <body id="">
-	<div id="app">
+	<div id="app"></div>
+	<div class="">
 
 		@include('partials.navbar-freelancer')
 
