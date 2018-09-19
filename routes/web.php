@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/test', function() {
+Route::get('test', function() {
 	return view('welcome');
 });
 
@@ -35,20 +35,20 @@ Route::get('/', function () {
     return view('front');
 });
 
-Route::post('/contact', 'ProjectsController@contact');
+Route::post('contact', 'ProjectsController@contact');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('projects/{slug}/edit', 'ProjectsController@edit');
-Route::get('projects/create', 'ProjectsController@create');
-Route::post('/projects/{slug}/edit', 'ProjectsController@edit');
+Route::get('/projects/{slug}/edit', 'ProjectsController@edit');
+Route::get('/projects/create', 'ProjectsController@create');
+Route::post('projects/{slug}/edit', 'ProjectsController@edit');
 Route::post('projects', 'ProjectsController@store');
-Route::get('projects/{slug}/delete', 'ProjectsController@destroy');
+Route::get('/projects/{slug}/delete', 'ProjectsController@destroy');
 
-Route::get('configurables/{slug}/edit', 'ConfigurablesController@edit');
-Route::get('configurables/create', 'ConfigurablesController@create');
-Route::post('/configurables/{slug}/edit', 'ConfigurablesController@edit');
-Route::post('/configurables', 'ConfigurablesController@store');
-Route::get('configurables/{slug}/delete', 'ConfigurablesController@destroy');
+Route::get('/configurables/{slug}/edit', 'ConfigurablesController@edit');
+Route::get('/configurables/create', 'ConfigurablesController@create');
+Route::post('configurables/{slug}/edit', 'ConfigurablesController@edit');
+Route::post('configurables', 'ConfigurablesController@store');
+Route::get('/configurables/{slug}/delete', 'ConfigurablesController@destroy');

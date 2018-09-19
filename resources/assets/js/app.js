@@ -10,6 +10,10 @@ require('./ie10-viewport-bug-workaround');
 require('./jqBootstrapValidation');
 require('./contact_me');
 require('./freelancer');
+require('./markdown');
+require('./marked.min.js');
+require('./to-markdown');
+require('./site');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

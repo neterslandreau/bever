@@ -1,4 +1,4 @@
-<table class="table table-striped table-bordered table-condensed">
+<table class="table table-striped table-bordered table-condensed col-xs-4">
 	<thead>
 		<tr>
 			<td>Name</td>

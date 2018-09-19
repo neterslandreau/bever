@@ -12,3 +12,8 @@ textarea.project-details {
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+// Summernote
+@import url(//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote-bs4.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.css);
+

@@ -16,7 +16,7 @@
 		<tr>
 			<td>{{ $project->name }}</td>
 			<td>{{ $project->location }}
-			<td>{{ $project->description }}</td>
+			<td>{!! $project->description !!}</td>
 			<td><a class="glyphicon glyphicon-eye-open nav-link" href="#{{ $project->slug }}" role="button" data-toggle="modal"><span></span></a></td>
             <td><a class="glyphicon glyphicon-pencil nav-link" href="/projects/{{ $project->slug }}/edit" role="button"><span></span></a></td>
             <td><a class="glyphicon glyphicon-trash nav-link" href="/projects/{{ $project->slug }}/delete" role="button"><span></span></a></td>
