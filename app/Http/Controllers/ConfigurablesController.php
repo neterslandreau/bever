@@ -33,6 +33,7 @@ class ConfigurablesController extends Controller
 	 */
 	public function store(Request $request)
 	{
+		dd(request());
 		$this->validate(request(), [
 			'name' => 'required',
 			'type' => 'required',
@@ -88,7 +89,7 @@ class ConfigurablesController extends Controller
 				if ($configurable->type === 'file') {
 					$filename = $configurable->slug . '.png';
 					request()->file('value')->storeAs('public/icons', $filename);
-					$configurable->value = 'public/icons/' . $filename;
+					$configurable->value = '/img/large/' . $filename;
 				} else {
 					$configurable->value = request('value');
 				}
