@@ -20,8 +20,12 @@ Route::get('/image', function()
 	// @if (Storage::disk('local')->exists('public/icons/site-logo.png'))
     $img = Image::make(Storage::disk('local')->get('public/icons/site-logo.png'));
     // dd($img->response('jpg'));
+    $img->resize(500, null, function($constraint) {
+    	$constraint->aspectRatio();
+    });
+    $img->rotate(-90);
 
-    return $img;
+    return $img->response('jpg');
 });
 
 Route::post('avatars', function () {
