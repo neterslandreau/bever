@@ -15,6 +15,15 @@ Route::get('test', function() {
 	return view('welcome');
 });
 
+Route::get('/image', function()
+{
+	// @if (Storage::disk('local')->exists('public/icons/site-logo.png'))
+    $img = Image::make(Storage::disk('local')->get('public/icons/site-logo.png'));
+    // dd($img->response('jpg'));
+
+    return $img;
+});
+
 Route::post('avatars', function () {
 
 	$bucket = Config::get('filesystems.disks.s3.bucket');
