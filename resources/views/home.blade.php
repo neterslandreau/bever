@@ -27,6 +27,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 @foreach ($projects as $project)
