@@ -63720,9 +63720,14 @@ if (( false ? 'undefined' : _typeof(exports)) === 'object') {
 /***/ (function(module, exports) {
 
 $(function () {
-  /*	$('#description').markdown(); */
+	/*	$('#description').markdown(); */
 
-  $('#description').summernote();
+	$('#description').summernote();
+
+	$('#toggle-panels').on('click', function () {
+		$('#site-configuration').toggle();
+		$('#site-projects').toggle();
+	});
 });
 
 /***/ }),
